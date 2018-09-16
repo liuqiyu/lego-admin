@@ -1,6 +1,6 @@
 {
   "apps" : [{
-    "name" : "Wolverine",  //名称
+    "name" : "Lego",  //名称
     "script": "./bin/www", //程序入库
     "cwd": "./",           //根目录
     "watch":[
