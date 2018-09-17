@@ -8,6 +8,7 @@ var db = require('./../../common/dbCommon');
 var register = function(req, res) {
     var username = req.body.username;
     var password = req.body.password;
+    var gender = req.body.gender;
     var sql = "select * from user where username = '" + username + "'";
     db.query(sql, function(err, rows, fields) {
         if (err) {
@@ -20,7 +21,8 @@ var register = function(req, res) {
                 message: '用户名已存在！',
             });
         } else {
-            var sql = "insert into user (username, password) values ('" + username + "', '" + password + "')";
+            var sql = "insert into user (username, password, gender) values ('" + username + "', '" + password + "' , '" + gender + "')";
+            console.log(sql);
             db.query(sql, function(err, rows, fields) {
                 if (err) {
                     return console.error(err);

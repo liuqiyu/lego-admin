@@ -10,7 +10,7 @@ var pool = mysql.createPool({
     host            : '39.108.61.54',
     user            : 'root',
     password        : '199358',
-    database        : 'test'
+    database        : 'lego'
 });
 
 db.query = function(sql, callback) {

@@ -1,10 +1,8 @@
 var createError = require('http-errors');
 var user = require('./user');
-var overview = require('./overview');
 
 var router = function(app) {
     app.use('/user', user);
-    app.use('/overview', overview);
 
     // catch 404 and forward to error handler
     app.use(function(req, res, next) {
