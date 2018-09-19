@@ -1,9 +1,11 @@
 var createError = require('http-errors');
 var user = require('./user');
+var share = require('./share');
 var uploadImg = require('./upload');
 
 var router = function(app) {
     app.use('/user', user);
+    app.use('/share', share);
     app.use('/upload', uploadImg);
 
     // catch 404 and forward to error handler

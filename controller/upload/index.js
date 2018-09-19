@@ -1,8 +1,6 @@
 var host = require('./../../common/config');
 
 var upload = function(req, res, next) {
-    console.log(req.files);
-
     var data = [];
     for (var i = 0; i < req.files.length; i ++) {
         var path = host + req.files[i].path.replace(/\\/g,"\/").replace('public', '');

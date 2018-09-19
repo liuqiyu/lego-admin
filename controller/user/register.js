@@ -22,7 +22,6 @@ var register = function(req, res) {
             });
         } else {
             var sql = "insert into user (username, password, gender) values ('" + username + "', '" + password + "' , '" + gender + "')";
-            console.log(sql);
             db.query(sql, function(err, rows, fields) {
                 if (err) {
                     return console.error(err);
