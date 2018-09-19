@@ -66,4 +66,7 @@ app.use(function(req, res, next) {
 
 router(app);
 
+var a = require('./common/config');
+console.log(a);
+
 module.exports = app;

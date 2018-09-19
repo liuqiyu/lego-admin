@@ -32,6 +32,7 @@ var login = function(req, res) {
                             sessionID: req.sessionID,
                             username: rows[0].username,
                             gender: rows[0].gender,
+                            photo: rows[0].photo,
                             role: rows[0].role,
                         },
                     });
