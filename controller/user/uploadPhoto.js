@@ -6,6 +6,7 @@ var uploadPhoto = function(req, res) {
     var path = host + file.path.replace(/\\/g,"\/").replace('public', '');
     var user_id = req.session.user.id;
     var sql = "update user set photo = '" + path + "' where id = " + user_id;
+    console.log(sql);
     db.query(sql, function(err, rows, fields) {
         if (err) {
             return console.error(err);
