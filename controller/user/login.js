@@ -30,6 +30,7 @@ var login = function(req, res) {
                         message: '登录成功！',
                         data: {
                             sessionID: req.sessionID,
+                            id: rows[0].id,
                             username: rows[0].username,
                             gender: rows[0].gender,
                             photo: rows[0].photo,
