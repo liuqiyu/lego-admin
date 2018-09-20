@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "set NODE_ENV=development&&supervisor node ./bin/www",
-    "pro": "set NODE_ENV=production&&supervisor node ./bin/www",
+    "dev": "set process.env.NODE_ENV=development&&supervisor node ./bin/www",
+    "pro": "export NODE_ENV=production&&supervisor node ./bin/www",
     "start": "supervisor node ./bin/www",
     "pm2": "set NODE_ENV=production&&pm2 start processes.json"
   },
