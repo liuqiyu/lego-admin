@@ -8,4 +8,6 @@ if (env == 'development') {
 } else if (env == 'production') {
     host = 'http://39.108.61.54:3334/'
 }
+
+console.log('我们的host是：' + host);
 module.exports = host;
