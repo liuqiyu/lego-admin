@@ -2,6 +2,8 @@ var env = process.env.NODE_ENV || 'development';
 
 var host = 'http://localhost:3334';
 
+console.log(process.env.NODE_ENV );
+
 if (env == 'development') {
     // configure stuff here
     // app.enable("view cache");
