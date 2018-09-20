@@ -6,6 +6,10 @@ var session = require('express-session');
 var FileStore = require('session-file-store')(session);
 var router = require('./routers');
 
+console.log('-------------------');
+console.log(process.env.NODE_ENV);
+console.log('-------------------');
+
 var app = express();
 
 //设置跨域访问
